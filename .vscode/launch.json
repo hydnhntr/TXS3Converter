@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug RGBA32",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/TextureSetConverter/bin/Debug/net9.0/TextureSetConverter.dll",
+            "envFile": "${workspaceFolder}/.vscode/.env",
+            "args": [
+                "convert-png",
+                "-i",
+                "${env:TEST_INPUT}"
+            ],
+            "cwd": "${workspaceFolder}/TextureSetConverter",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false,
+        }
+    ]
+}

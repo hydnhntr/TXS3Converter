@@ -259,3 +259,8 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# Local testdata and debug env config
+testdata/
+.vscode/.env
+.DS_Store
